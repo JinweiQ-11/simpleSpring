@@ -6,8 +6,15 @@ create table Spittle (
 	longitude double
 );
 
+create table Spittle (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	message varchar(140) not null,
+	created_at timestamp not null,
+	latitude double,
+	longitude double
+);
 create table Spitter (
-	id identity,
+	id INT AUTO_INCREMENT PRIMARY KEY,
 	username varchar(20) unique not null,
 	password varchar(20) not null,
 	first_name varchar(30) not null,
